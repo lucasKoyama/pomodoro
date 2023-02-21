@@ -112,14 +112,14 @@ buttonOne.addEventListener('click', (event) => {
       timer('focus', seconds(focusTimer));
       recommend.innerHTML = '<label for="check">Notificações do celular desligadas &nbsp<input type="checkbox" name="checked" id="check" checked></label>' +
                             '<label for="check">tela virada para baixo &nbsp<input type="checkbox" name="checked" id="check" checked></label> <br>' +
-                            '<i class="fa-solid fa-bullseye fa-5x"></i>';
+                            '<i class="fa-solid fa-bullseye fa-3x"></i>';
       doneCycles += 1;
       break;
     case 'Pausa':
       timer('smallBreak', seconds(smallBreakTimer));
       recommend.innerHTML = '<label for="check">Encher a garrafa de água &nbsp<input type="checkbox" name="checked" id="check" checked></label>' +
                             '<label for="check">Ir ao banheiro &nbsp<input type="checkbox" name="checked" id="check" checked></label> <br>' +
-                            '<i class="fa-sharp fa-solid fa-droplet fa-5x"></i> <br>' +
+                            '<i class="fa-sharp fa-solid fa-droplet fa-3x"></i> <br>' +
                             '<h5>Beba 2L de água ao longo do dia</h5>';
       break;
     case 'Descanso':
@@ -130,7 +130,7 @@ buttonOne.addEventListener('click', (event) => {
       cycleBar.style.display = 'none';
       recommend.innerHTML = '<label for="check">Lanchar &nbsp<input type="checkbox" name="checked" id="check" checked></label>' +
                             '<label for="check">Pegar um café &nbsp<input type="checkbox" name="checked" id="check" checked></label> <br>' + 
-                            '<i class="fa-solid fa-mug-hot fa-5x"></i>';
+                            '<i class="fa-solid fa-mug-hot fa-3x"></i>';
       break;
   }
   randomPhrase.innerText = phrases[Math.floor(Math.random() * phrases.length)]

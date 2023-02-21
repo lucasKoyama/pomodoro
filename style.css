@@ -109,3 +109,36 @@ button {
     width: 100%;
   }
 }
+
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 1.5em;
+  }
+
+  .flex {
+    width: 90%;
+    margin: 2.5% auto;
+  }
+
+  .flex label {
+    width: 90%;
+  }
+  
+  #bar {
+    height: 56px;
+    top: 56px;
+    margin-top: -50px;
+  }
+
+  .activeBar {
+    padding-left: 65px;
+  }
+
+  #labelPhrase {
+    width: 100%;
+  }
+
+  #recommend label {
+    font-size: 0.5em;
+  }
+}
