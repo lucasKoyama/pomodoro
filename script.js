@@ -19,19 +19,26 @@ const recommend = getById('recommend');
 const cycleBar = document.getElementsByClassName('cycle')[0];
 const totalTime = getById('totalTime');
 let countdown;
+let phrases = [];
 // buttons
 const buttonOne = getById('buttonOne'); // focus or break
 const reset = getById('reset');
 const addPhraseBtn = getById('addPhrase');
 
 // phrases
-const savedPhrases = JSON.parse(localStorage.getItem('phrases'));
-const phrases = [...savedPhrases];
+if (!localStorage.getItem('phrases')) {
+  const initPhrase = ['As pessoas costumam dizer que a motivação não dura sempre. Bem, nem o efeito do banho, por isso recomenda-se diariamente'];
+  localStorage.setItem('phrases', JSON.stringify(initPhrase));
+  phrases = [...initPhrase];
+} else {
+  const savedPhrases = JSON.parse(localStorage.getItem('phrases'));
+  phrases = [...savedPhrases];
+}
 addPhraseBtn.addEventListener('click', (event) => {
-  const inputPhrase = getById('phrases').value;
-  phrases.push(inputPhrase);
+  const inputPhrase = getById('phrases');
+  phrases.push(inputPhrase.value);
   localStorage.setItem('phrases', JSON.stringify(phrases));
-  phrases.value = '';
+  inputPhrase.value = '';
 });
 
 const disableAll = (boolean) => {
