@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Thrive</title>
+  </head>
+  <body>
+    <section class="flex">
+      <label for="phrases">Adicionar frases de gatilhos
+        <input type="text" name="phrases" id="phrases" class="form-control">
+      </label>
+      <div class="buttons"><button class="btn btn-light" id="addPhrase">Adicionar</button></div>
+      <label for="phrase" id="labelPhrase"><h3 id="phrase"></h3></label>
+      <label for="focus">Tempo focado
+        <div id="bar" class="bar focus"></div>
+        <input type="number" name="focus" id="focus" class="form-control" value="25" min="0">
+      </label>
+      <label for="smallBreak">Pausa menor
+        <div id="bar" class="bar smallBreak"></div>
+        <input type="number" name="smallBreak" id="smallBreak" class="form-control" value="5" min="0">
+      </label>
+      <label for="breakTimer">Pausa maior
+        <div id="bar" class="bar break"></div>
+        <input type="number" name="breakTimer" id="breakTimer" class="form-control" value="15" min="0">
+      </label>
+      <label for="cycle">Ciclos
+        <div id="bar" class="bar cycle"></div>
+        <input type="number" name="cycle" id="cycle" class="form-control" value="4" min="0">
+      </label>
+      <section class="buttons">
+        <button id="buttonOne" class="btn btn-light">Focar</button>
+        <button id="reset" class="btn btn-light">Resetar</button>
+      </section>
+      <br>
+      <section id="recommend"></section>
+    </section>
+    <script src="https://kit.fontawesome.com/acd32288d9.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

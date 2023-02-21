@@ -1,0 +1,111 @@
+body {
+  background-color: rgb(29, 26, 26);
+  color: rgb(227, 227, 227);
+  font-weight: 600;
+}
+
+.flex {
+  margin-top: 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex label {
+  margin-top: 0.5%;
+  width: 20%;
+}
+
+h3 {
+  margin: 1% auto;
+  text-align: center;
+}
+
+#labelPhrase {
+  width: 30%;
+}
+
+button {
+  width: 100%;
+  margin: 12px 8px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+}
+
+#bar {
+  height: 38px;
+  width: 0px;
+  border-radius: 6px;
+  color: rgb(56, 56, 56);
+  position: relative;
+  top: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  margin-top: -35px;
+}
+
+.activeBar {
+  padding-left: 42px;
+  padding-right: 4px;
+}
+
+.focus, .cycle {
+  background: rgb(67,180,40);
+  background: linear-gradient(180deg, rgba(67,180,40,1) 0%, rgba(48,255,0,1) 50%, rgba(67,180,40,1) 100%);
+}
+
+.smallBreak {
+  background: rgb(15,122,166);
+  background: linear-gradient(180deg, rgba(15,122,166,1) 0%, rgba(54,191,246,1) 50%, rgba(15,122,166,1) 100%);
+}
+
+.break {
+  background: rgb(189,144,29);
+  background: linear-gradient(180deg, rgba(189,144,29,1) 0%, rgba(247,182,13,1) 50%, rgba(189,144,29,1) 100%);
+}
+
+#recommend {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#recommend label{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+@media screen and (max-width: 992px) {
+  html {
+    font-size: 1.5em;
+  }
+
+  .flex {
+    width: 90%;
+    margin: 2.5% auto;
+  }
+
+  .flex label {
+    width: 50%;
+  }
+  
+  #bar {
+    height: 56px;
+    top: 56px;
+    margin-top: -50px;
+  }
+
+  .activeBar {
+    padding-left: 65px;
+  }
+
+  #labelPhrase {
+    width: 100%;
+  }
+}
